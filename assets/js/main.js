@@ -4,9 +4,9 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 var $overlay = $('<div id="overlay"></div>');
-$("pic01").append($overlay);
+$("#pic01").append($overlay);
 
-$("pic01").click(function(event)){
+$("#pic01").click(function(event)){
 event.preventDefault();
 var href = $(this).attr("href");
 $overlay.show();
