@@ -3152,7 +3152,7 @@
     display: block;
     position: fixed;
     height: 10%;
-    width: 10%
-    background: black;
+    width: 10%;
+    background: rgba(0,0,0,0.7);
         
 }
