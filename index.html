@@ -39,9 +39,9 @@
 					-->
 				</header>
 
-				<div class="box alt container">
+				<div class="box alt container" id="imageGallery">
 					<section class="feature left">
-						<a href="#" class="image icon fa-signal overlay" id=pic01><img src="images/pic01.jpg" alt="" /></a>
+						<a href="#" class="image icon fa-signal"><img src="images/pic01.jpg" alt="" /></a>
 						<div class="content">
 							<h3>The First Thing</h3>
 							<p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis fusce lacus.</p>
@@ -225,6 +225,7 @@
 		<!-- Footer -->
 			<div id="footer">
 				<div class="container 75%">
+                    <input type="button" onclick= "show()"></input>
 
 					<header class="major last">
 						<h2>Questions or comments?</h2>
@@ -277,6 +278,16 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
-
+        <script>
+        $(document).ready(function(){
+            $("form").hide();
+        
+        }); 
+    
+            function show() {
+                $("form").show();
+            }
+        </script>
+<div id="overlay"></div>
 	</body>
 </html>

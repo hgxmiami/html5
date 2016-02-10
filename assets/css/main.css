@@ -3126,16 +3126,33 @@
 				}
 
 	}
-#overlay a {
-    position: absolute;
+#overlay {
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #000;
-    filter:alpha(opacity=50);
-    -moz-opacity:0.5;
-    -khtml-opacity: 0.5;
-    opacity: 0.5;
-    z-index: 10000;
+    background: rgba(0,0,0,0.7);
+    display: none;
+    z-index: 100;
+    
+    
+}
+
+#overlay img {
+   display: block;
+   margin: 0 auto;
+   margin-top: 20%;
+   width: 30%;
+   height: 30%;
+   
+}
+
+.button {
+    display: block;
+    position: fixed;
+    height: 10%;
+    width: 10%
+    background: black;
+        
 }

@@ -3,14 +3,30 @@
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
-var $overlay = $('<div id="overlay"></div>');
-$("#pic01").append($overlay);
 
-$("#pic01").click(function(event)){
-event.preventDefault();
-var href = $(this).attr("href");
-$overlay.show();
-}
+var $overlay = $('<div id="overlay"></div>');
+var $image = $("<img>");
+
+$overlay.append($image);
+
+$("body").append($overlay);
+
+$("#imageGallery a").click(function(event){
+    console.log("hello");
+event.preventDefault()
+var imageLocation = $(this).find("img").attr("src");
+
+
+$image.attr("src", imageLocation)
+
+$overlay.show()
+
+}); 
+
+$overlay.click(function(){
+    
+    $overlay.hide();
+});
 
 (function($) {
 
